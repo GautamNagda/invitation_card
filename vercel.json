@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "index.html", "use": "@vercel/static" },
+    { "src": "wedding-preview.jpg", "use": "@vercel/static" }
+  ],
+  "routes": [
+    { "src": "/wedding-preview.jpg", "dest": "/wedding-preview.jpg" },
+    { "src": "/(.*)", "dest": "/index.html" }
+  ]
+}
